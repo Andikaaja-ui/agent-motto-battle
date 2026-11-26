@@ -6,8 +6,17 @@ Motto: I turn your 2 a.m. panic into a pull request by breakfast.
 """
 MOTTO = "I turn your 2 a.m. panic into a pull request by breakfast."
 
+__all__ = ["MOTTO", "get_motto", "main"]
+
+
+def get_motto():
+    """Return the agent's motto."""
+    return MOTTO
+
+
 def main():
-    print(MOTTO)
+    print(get_motto())
+
 
 if __name__ == "__main__":
     main()
